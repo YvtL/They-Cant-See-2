@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Vidhi_MainMenu.unity
+    path: Assets/Scenes/Vidhi_CreditPage.unity
     guid: 5b7b825c24a9f794c875e043ffbf4f37
   - enabled: 1
     path: Assets/Scenes/0501_combined.unity

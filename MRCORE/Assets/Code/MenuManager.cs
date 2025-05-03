@@ -30,6 +30,10 @@ public class MenuManager : MonoBehaviour
                {
                 Application.Quit();
                }
+               else if (target.name == "Button3")
+               {
+                UnityEngine.SceneManagement.SceneManager.LoadScene(CreditPage);
+               }
             }
         }
     }
