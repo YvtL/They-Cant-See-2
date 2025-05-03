@@ -32,7 +32,11 @@ public class MenuManager : MonoBehaviour
                }
                else if (target.name == "Button3")
                {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(CreditPage);
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Vidhi CreditPage");
+               }
+               else if (target.name == "Button4")
+               {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Vidhi_MainMenu");
                }
             }
         }

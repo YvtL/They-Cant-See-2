@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 189786856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.43315768, y: 1.3579077, z: 0.4769058}
+  m_LocalPosition: {x: -0.43315768, y: 1.3579077, z: -0.033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -288,6 +288,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2017580223798327247, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166290365310287713, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331090703838400589, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7763173073272180074, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7773700112686612141, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
       propertyPath: m_Name
       value: Anii4
@@ -841,6 +857,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1421931309690368258, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3282895246808058794, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
       propertyPath: m_Name
       value: Anii1_updated Variant
@@ -1142,7 +1162,7 @@ Transform:
   m_GameObject: {fileID: 1201870937}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.302, y: -0.243, z: -0.334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1442,9 +1462,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.31496406
-  m_Height: 1.736624
+  m_Height: 1.2087198
   m_Direction: 1
-  m_Center: {x: 0.18503594, y: -0.4749688, z: 0}
+  m_Center: {x: 0.18503594, y: -0.73892087, z: 0}
 --- !u!1 &1672520745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +1702,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1509871681139813318, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2613901252066669118, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.432
