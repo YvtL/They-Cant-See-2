@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CatchingAnimals : MonoBehaviour
 {
+    private GameObject recentlyCaughtAnimal = null;
+
     private NavMeshAgent navAgent;
     private Animator animator;
     private MonsterAnimationController animController;
@@ -74,36 +76,29 @@ public class CatchingAnimals : MonoBehaviour
 
         return closest;
     }
-
 void CatchAnimal(GameObject animal)
 {
     if (gameOver || animal == null) return;
 
+    // Prevent catching same animal multiple times
+    if (recentlyCaughtAnimal == animal) return;
+
+    recentlyCaughtAnimal = animal;
+
     Debug.Log("Monster caught an animal: " + animal.name);
 
-    // Immediately "lock" catching
     navAgent.isStopped = true;
 
     if (animController != null)
     {
         animController.PlayKillAnimation(animal);
     }
-    else
-    {
-        AnimalAnimationController animalController = animal.GetComponent<AnimalAnimationController>();
-        if (animalController != null)
-        {
-            animalController.Die();
-        }
-        else
-        {
-            Destroy(animal);
-        }
-    }
+
+    animal.SetActive(false); // Disable so it can't be caught again
 
     animalsEaten++;
+    Debug.Log($"Animals Eaten: {animalsEaten} / Max Allowed: {maxAnimalsAllowedToDie}");
 
-    // Very important: Only check for game over AFTER animal was processed
     if (animalsEaten >= maxAnimalsAllowedToDie)
     {
         gameOver = true;
@@ -111,19 +106,73 @@ void CatchAnimal(GameObject animal)
     }
     else
     {
-        // Resume movement AFTER killing animation (optional small delay here if you want realism)
         StartCoroutine(ResumeChasing());
     }
 }
 
 IEnumerator ResumeChasing()
 {
-    yield return new WaitForSeconds(1f); // Wait a moment so monster doesn't immediately eat another
+    yield return new WaitForSeconds(1f); // give time to disable and move on
+    recentlyCaughtAnimal = null;
+
     if (!gameOver && navAgent != null)
     {
         navAgent.isStopped = false;
     }
 }
+
+
+
+// void CatchAnimal(GameObject animal)
+// {
+//     if (gameOver || animal == null) return;
+
+//     Debug.Log("Monster caught an animal: " + animal.name);
+
+//     // Immediately "lock" catching
+//     navAgent.isStopped = true;
+
+//     if (animController != null)
+//     {
+//         animController.PlayKillAnimation(animal);
+//     }
+//     else
+//     {
+//         AnimalAnimationController animalController = animal.GetComponent<AnimalAnimationController>();
+//         if (animalController != null)
+//         {
+//             animalController.Die();
+//         }
+//         else
+//         {
+//             Destroy(animal);
+//         }
+//     }
+
+//     animalsEaten++;
+//     Debug.Log($"Animals Eaten: {animalsEaten} / Max Allowed: {maxAnimalsAllowedToDie}");
+
+//     // Very important: Only check for game over AFTER animal was processed
+//     if (animalsEaten >= maxAnimalsAllowedToDie)
+//     {
+//         gameOver = true;
+//         StartCoroutine(ShowLoseUI());
+//     }
+//     else
+//     {
+//         // Resume movement AFTER killing animation (optional small delay here if you want realism)
+//         StartCoroutine(ResumeChasing());
+//     }
+// }
+
+// IEnumerator ResumeChasing()
+// {
+//     yield return new WaitForSeconds(1f); // Wait a moment so monster doesn't immediately eat another
+//     if (!gameOver && navAgent != null)
+//     {
+//         navAgent.isStopped = false;
+//     }
+// }
 
 
     // void CatchAnimal(GameObject animal)

@@ -719,7 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   losePanel: {fileID: 0}
   outlineMaterial: {fileID: 2100000, guid: cf592f0324c4ce949bedcbad20c8e46a, type: 2}
-  maxAnimalsAllowedToDie: 0
+  maxAnimalsAllowedToDie: 3
   catchDistance: 1.5
 --- !u!95 &645841690
 Animator:
@@ -2530,7 +2530,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5575170167838701637, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
       propertyPath: maxAnimalsAllowedToDie
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5664237624074788642, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
       propertyPath: m_LocalPosition.x
