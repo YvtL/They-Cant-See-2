@@ -17,25 +17,25 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/CommonScene.unity
     guid: 700c8376fc27920498889b40fc3d2b37
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 55daccc09a3b69647bbab145b54a3ab3
   - enabled: 0
     path: Assets/Scenes/MR_Base.unity
     guid: f04ad7d9d7a497247a37988826774236
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Blah.unity
     guid: db20dab1f2d605642a5164fa3b8d2339
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ccol.unity
     guid: d66b35847ed3e564abaa61dfc862f9ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ProfScenes/Rift.unity
     guid: 83f4a3dad40f8c14e81773520e9250ae
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ProfScenes/Portal.unity
     guid: b2c62f2d4a01313439301136208c4f61
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/belinda's code test.unity
     guid: 855e5449a82ad45d28a2fd452908881c
   - enabled: 1
