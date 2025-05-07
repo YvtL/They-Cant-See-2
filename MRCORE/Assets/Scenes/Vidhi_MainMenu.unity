@@ -300,6 +300,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5885056611251329189, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7763173073272180074, guid: 3bdd5ce305555fe458e161b6b4613ad0, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -861,6 +865,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2610132469967707821, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162428019189260409, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3282895246808058794, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
       propertyPath: m_Name
       value: Anii1_updated Variant
@@ -915,6 +927,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3648342840829839153, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8824157824033596746, guid: b556ca7c97f7fa344a9ce21846c41c0b, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1084,6 +1100,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5575170167838701637, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5664237624074788642, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.45
@@ -1127,6 +1147,10 @@ PrefabInstance:
     - target: {fileID: 5664237624075141890, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
       propertyPath: m_Name
       value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207232421407584840, guid: 5d0517a4cbb38b14689547a843222a69, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1746,9 +1770,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3665640418596498338, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4280912205797490341, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
       propertyPath: m_Name
       value: Anii2 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396857570311394678, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7823387953666773061, guid: 99663cf329972cd45b9ebc26ad164d5a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
