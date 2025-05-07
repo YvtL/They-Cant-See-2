@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8144638618145211549}
+  - component: {fileID: 3275448104801175633}
   - component: {fileID: 7901485032025373327}
-  - component: {fileID: 2177318430526046564}
   - component: {fileID: 5668657481679467242}
   - component: {fileID: 4166851213078849254}
-  - component: {fileID: 7289834617284576667}
   m_Layer: 0
   m_Name: Anii1
   m_TagString: Animal
@@ -37,6 +36,14 @@ Transform:
   - {fileID: 7675673553045223680}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3275448104801175633
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937939613248243718}
+  m_Mesh: {fileID: -5750084716789328873, guid: c0f430cf84efa6448908d4324e0f4419, type: 3}
 --- !u!23 &7901485032025373327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7937939613248243718}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -82,21 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2177318430526046564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7937939613248243718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffb51183743c644f827c6e126e47f8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  centerObject: {fileID: 0}
-  rotationSpeed: 25
-  rotationAxis: {x: 0, y: 1, z: 0}
 --- !u!54 &5668657481679467242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -270,29 +262,6 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!136 &7289834617284576667
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7937939613248243718}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.60001886
-  m_Height: 2.9221804
-  m_Direction: 2
-  m_Center: {x: 0.004270871, y: -0.057223238, z: -0.22877613}
 --- !u!1001 &7675673553044824960
 PrefabInstance:
   m_ObjectHideFlags: 0
